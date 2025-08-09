@@ -1,0 +1,27 @@
+appId: com.example.projectmanager
+productName: ProjectManager
+icon: build/icon.ico
+files:
+  - dist/**
+  - build/**
+  - src/**
+extraResources:
+  - from: build/icon.ico
+    to: icon.ico
+win:
+  target:
+    - nsis
+nsis:
+  shortcutName: ProjectManager
+  include: build/installer.nsh
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  menuCategory: true
+  allowToChangeInstallationDirectory: true
+  runAfterFinish: true
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  uninstallDisplayName: ProjectManager
+  oneClick: false
+  perMachine: false
+  allowElevation: true

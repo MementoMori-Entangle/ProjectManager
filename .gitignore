@@ -1,0 +1,6 @@
+# TypeScript + React
+node_modules/*
+dist/*
+build/*
+out/*
+package-lock.json
