@@ -17,9 +17,11 @@ TypeScriptの勉強を兼ねて、
 React.js + Node.jsで実装(Next.jsは未使用)
 
 ・APIサーバー  
+npm run start:server  
 node .\dist\controllers\api-server.js
 
 ・Web or ネイティブアプリ(electron)  
-npm run start  
+npm run start:client  
 or  
+npm run start  
 npm run electron
