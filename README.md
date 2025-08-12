@@ -6,7 +6,7 @@ TypeScriptの勉強を兼ねて、
 ツール化で効率化する。  
 複数のプロジェクト間を行き来する時や  
 しばらく触っていないプロジェクトを更新する時、  
-異なるアーキテクトを採用することがあるため、  
+異なるアーキテクチャを採用することがあるため、  
 コマンドやしきたりを忘れていたりすることがある。  
 関連テキストなどから当時の作業履歴を追って、  
 必要な情報を参照するにはそれなりにコストがかる。  
@@ -25,3 +25,9 @@ npm run start:client
 or  
 npm run start  
 npm run electron
+
+# データ管理
+データはJSONファイルでdataディレクトリで管理されます。  
+現在使用中のプロジェクト(JSONファイル)は./config/config.ts  
+export const SELECTED_PROJECT_FILE_NAME = 'selected-project.json';で  
+管理されることになります。
